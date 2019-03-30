@@ -1,0 +1,17 @@
+! Caps Lock becomes Mode_switch
+keycode  66 = Mode_switch NoSymbol Mode_switch
+
+keycode  27 = r R Prior
+keycode  43 = h H Left    
+keycode  44 = j J Down
+keycode  45 = k K Up  
+keycode  46 = l L Right 
+
+keycode  41 = f F Next
+keycode  42 = g G Home
+keycode  47 = semicolon colon End  
+
+keycode  26 = e E Escape
+
+keycode  58 = m M XF86Back
+keycode  59 = comma less XF86Forward
