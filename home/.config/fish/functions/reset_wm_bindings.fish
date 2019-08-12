@@ -10,4 +10,5 @@ function reset_wm_bindings
 	gsettings set org.gnome.desktop.wm.keybindings begin-move "[]"
 	gsettings set org.gnome.desktop.wm.keybindings begin-resize "[]"
 	gsettings set org.gnome.desktop.wm.keybindings cycle-group "[]"
+	gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "[]"
 end
