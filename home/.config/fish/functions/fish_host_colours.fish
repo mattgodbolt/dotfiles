@@ -3,7 +3,7 @@ function fish_host_colours
 	set colors Breeze
     switch (hostname)
         case 'cy2-ubuntu-*'
-            set colors "RedOnBlack"
+            set colors "Solarized"
     end
     printf "\033]50;%s\a" "colors=$colors"
 end
