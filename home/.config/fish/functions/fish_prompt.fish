@@ -1,3 +1,4 @@
+# Defined in - @ line 2
 function fish_prompt --description 'Write out the prompt'
 	set -l last_status $status
 
@@ -97,4 +98,5 @@ function fish_prompt --description 'Write out the prompt'
     echo -n "$suffix "
 
     set_color normal
+    fish_host_colours
 end
