@@ -61,6 +61,11 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_prompt_normal (set_color normal)
     end
 
+    set_color -d cyan
+    echo -n (hostname -s)
+    set_color normal
+    echo -n :
+
     set -l color_cwd
     set -l prefix
     set -l suffix
