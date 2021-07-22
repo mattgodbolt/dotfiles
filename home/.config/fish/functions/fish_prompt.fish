@@ -98,5 +98,5 @@ function fish_prompt --description 'Write out the prompt'
     echo -n "$suffix "
 
     set_color normal
-    fish_host_colours
+    fish_host_colours (hostname)
 end
