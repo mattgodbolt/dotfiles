@@ -1,0 +1,15 @@
+/addworld -Tdiku xania mud.xania.org 9000
+/addworld -Tdiku local localhost 9000
+
+/def c_at = at %1 cast %2 %1
+/def buff = \
+    /c_at %1 bless%; \
+    /c_at %1 armor%; \
+    /c_at %1 haste%; \
+    /c_at %1 regen%; \
+    /c_at %1 giant%; \
+    /c_at %1 refresh%; \
+    /c_at %1 sanc%; \
+    at %1 grin %1
+
+/def -p1 -mglob -t'You disappear into the void.' = snore
