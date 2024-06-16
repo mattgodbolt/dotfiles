@@ -30,3 +30,5 @@ fi
 if [ -d "$HOME/.ozy/bin" ] ; then
     PATH="$HOME/.ozy/bin:$PATH"
 fi
+
+. "$HOME/.atuin/bin/env"
