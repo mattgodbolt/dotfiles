@@ -32,3 +32,4 @@ if [ -d "$HOME/.ozy/bin" ] ; then
 fi
 
 . "$HOME/.atuin/bin/env"
+export PATH=~/.ozy/bin:$PATH
