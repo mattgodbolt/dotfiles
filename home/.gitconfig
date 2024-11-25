@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Matt Godbolt
+email = matt@godbolt.org
+	signingkey = 70DB1A8F484805E2B20E5AD3526C772C56F116C6
+[core]
+	editor = vim
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
