@@ -10,3 +10,5 @@ email = matt@godbolt.org
 	gpgsign = true
 [tag]
 	gpgSign = true
+[push]
+	autoSetupRemote = yes
