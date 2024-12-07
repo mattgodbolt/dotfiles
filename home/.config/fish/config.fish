@@ -2,7 +2,7 @@ if status is-interactive
     if command -q atuin
        atuin init fish --disable-up-arrow | source
     end
-    if test -f /usr/share/aujump/autojump.fish
+    if test -f /usr/share/autojump/autojump.fish
         source /usr/share/autojump/autojump.fish
     end
 end
