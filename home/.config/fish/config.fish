@@ -7,6 +7,10 @@ if status is-interactive
     end
 end
 
+if test -f "$HOME/.cargo/env.fish"
+    source "$HOME/.cargo/env.fish"
+end
+
 if test -f "$HOME/.homesick/repos/homeshick/homeshick.fish"
     source "$HOME/.homesick/repos/homeshick/homeshick.fish"
 end

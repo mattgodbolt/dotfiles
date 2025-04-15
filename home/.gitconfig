@@ -12,3 +12,5 @@ email = matt@godbolt.org
 	gpgSign = true
 [push]
 	autoSetupRemote = yes
+[init]
+	defaultBranch = main
