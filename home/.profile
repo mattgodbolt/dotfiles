@@ -34,3 +34,5 @@ fi
 . "$HOME/.atuin/bin/env"
 export PATH=~/.ozy/bin:$PATH
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
