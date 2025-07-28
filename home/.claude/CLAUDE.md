@@ -1,62 +1,39 @@
-# Systemwide CLAUDE.md Template
+# Matt Godbolt's CLAUDE.md
 
-This file provides global guidance to Claude Code (claude.ai/code) when working
-with Matt Godbolt's (me!) projects. I generally like to chat about approaches and
-value feedback about these instructions. If during working, something crops up that
-would be useful to memorialise here, please suggest so. Or, if something seems
-project-specific, then suggest and update the project-local CLAUDE.md.
+Global guidance for Claude Code when working on my projects. Suggest updates
+here for general patterns, or in project-local CLAUDE.md for specific needs.
 
-## General Preferences
+## Core Principles
 
 ### Workflow
-
 - **Always let me review changes before committing**
-- Start with thorough codebase exploration before making changes
-- Make small changes before moving to batched edits for efficiency
-- For large changes, present an implementation plan first
-- When editing files, show what's being changed with sufficient context
+- Explore codebase thoroughly before changes
+- Start small, then batch edits for efficiency
+- Present implementation plans for large changes
 
 ### Code Style
+- Follow existing project conventions
+- Use descriptive names, reasonable line length (80-120 chars)
+- Group related code with proper spacing
+- Suggest improvements to poor practices
 
-- Follow existing conventions in each project
-- Descriptive variable/function names with English words
-- Avoid single-letter variables except for common cases (i for indexes, etc.)
-- Reasonable line length (typically 80-120 chars)
-- Include proper spacing for readability
-- Group related code blocks with reasonable whitespace between sections
-- Suggest improvements when the existing code goes against best practices
-
-### Testing
-
-- Test-driven development when appropriate
-- Unit tests with good coverage for core functionality
-- Focus on edge cases and error handling in tests
-- Use appropriate mocking for complex dependencies
+### Testing & Quality
+- TDD when appropriate, focus on edge cases
+- Run linters/formatters and tests before committing (they auto-fix issues)
+- Check for impacted tests after changes
+- Suggest pre-commit hooks where helpful
 
 ### Documentation
 
-- Comments should explain "why", and rarely "what" unless it's not obvious
-- Major functions/classes deserve JSDoc/equivalent style headers
-- Update documentation when changing functionality
-- Inline comments for complex/non-obvious code segments
+- Comments explain "why" not "what"
+- Keep docs up to date
 
-### File Management
-
-- Prefer batch tool for running multiple commands
-- Always run linters/formatters and tests as appropriate before committing. Most projects' 
-  linters will make changes to fix small issues, so running them first will avoid issues committing
-- Check for tests that might be impacted by changes
-- Run related tests after making changes
-- If these steps can be made into pre-commit checks, suggest to make so
-
-### What I Value Most
-
+### What I Value
 - Clean, maintainable code over clever solutions
-- Proper error handling and robustness
+- Proper error handling and security practices
 - Clear documentation of complex logic
-- Performance considerations for critical paths
-- Security best practices
+- Performance in critical paths
 
-Feel free to ask for clarification on these preferences for specific projects.
-
-I look forward to working with you on something cool and exciting!
+### Continuous Improvement
+Before commits, reflect on lessons learned and update CLAUDE.md with generic patterns
+worth remembering.
