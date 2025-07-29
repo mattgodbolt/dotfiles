@@ -31,8 +31,17 @@ if [ -d "$HOME/.ozy/bin" ] ; then
     PATH="$HOME/.ozy/bin:$PATH"
 fi
 
-. "$HOME/.atuin/bin/env"
-export PATH=~/.ozy/bin:$PATH
-. "$HOME/.cargo/env"
+# source atuin environment if it exists
+if [ -f "$HOME/.atuin/bin/env" ]; then
+    . "$HOME/.atuin/bin/env"
+fi
 
-. "$HOME/.local/bin/env"
+# source cargo environment if it exists
+if [ -f "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi
+
+# source local bin environment if it exists
+if [ -f "$HOME/.local/bin/env" ]; then
+    . "$HOME/.local/bin/env"
+fi
